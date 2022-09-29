@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #0A0A0B;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+
+    .header{
+        position: relative;
+        width: 100%;
+        height: 880px;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(../img/shape\ big\ \(1\).svg);
+            background-repeat: no-repeat;
+            content: ' ';
+            width: 540px;
+            height: 650px;
+        }
+        &::after{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-image: url(../img/cantentbg.svg);
+            background-repeat: no-repeat;
+            content: ' ';
+            width: 427px;
+            height: 650px;
+        }
+        // .img-shadow{
+        //     position: absolute;
+        //     width: 500px;
+        //     height: 500px;
+        //     left: -138px;
+        //     top: -28px;
+        //     background: rgba(55, 74, 109, 0.5);
+        //     filter: blur(90px)
+        // }
+        .header_nav{
+            width: 80%;
+            height: 80px;
+            color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            .nav_title{
+                width: 500px;
+                height: 100%;
+                font-family: sans-serif;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .title-2{
+                    color: #4177DC;
+                }
+                @media screen and (max-width: 768px){
+                    .title-2{
+                        display: none;
+                    }
+                }
+                @media screen and (max-width:768px){
+                    .title{
+                        display: none;
+                    }
+                }
+            }
+            @media screen and (max-width:768px){
+                .nav_title{
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+            
+            @media screen and (min-width:768px){
+                .nav_svg{
+                    display: none;
+                }
+            }
+        }
+        .header_main{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            font-family: sans-serif;
+            padding-top: 100px;
+            gap: 30px;
+
+            .header-main-shadow{
+                position: absolute;
+                width: 400px;
+                height: 400px;
+                left: 90%;
+                top: 404px;
+                background: rgba(55, 74, 109, 0.5);
+                filter: blur(90px);
+            }
+            .header_main_footer{
+                width: 406px;
+                height: 104px;
+                display: flex;
+                justify-content: space-between;
+
+                .box-1{
+                    width: 89px;
+                    height: 104px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                    font-size: 12px;
+                    p{
+                        color: #888B91;
+                    }
+                }
+                .box-2{
+                    width: 89px;
+                    height: 104px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                    font-size: 12px;
+                    p{
+                        color: #888B91;
+                    }
+                }
+                .box-3{
+                    width: 89px;
+                    height: 104px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                    font-size: 12px;
+                    p{
+                        color: #888B91;
+                    }
+                }
+            }
+        }
+
+    }
+}
